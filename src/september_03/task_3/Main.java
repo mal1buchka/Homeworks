@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 public class Main {
     public static void main(String[] args) {
         List<String> randomStrings = IntStream.range(0, 5)
-                .mapToObj(_-> generateRandomString())
+                .mapToObj(e -> generateRandomString())
                 .toList();
         List<String> palindromes = randomStrings.stream()
                 .map(Main::makePalindrome)
